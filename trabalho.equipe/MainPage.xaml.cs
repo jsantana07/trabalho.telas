@@ -1,0 +1,43 @@
+﻿namespace trabalho.equipe;
+
+public partial class MainPage : ContentPage
+{
+	
+
+	public MainPage()
+	{
+		InitializeComponent();
+	}
+	private async void OnCadastrarMateriaPrimaClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MateriaPrimaPage());
+        }
+
+        private async void OnCadastrarFornecedorClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FornecedorPage());
+        }
+
+        private async void OnAcompanharVendasClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new VendasPage());
+        }
+
+        private async void OnGerenciarClientesClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ClientesPage());
+        }
+
+        private async void OnCadastrarCostureiraClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CostureiraPage());
+        }
+         private async void OnTransportadoraClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TransportadoraPage());
+        }
+    }
+
+
+
+

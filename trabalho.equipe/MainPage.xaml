@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trabalho.equipe.MainPage"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="false">
+
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="O que deseja fazer?" 
+                   FontSize="Large"
+                   HorizontalOptions="Center" 
+                   Margin="0,20,0,20"/>
+            
+            <Button Text="Cadastrar Matéria Prima" 
+                    BackgroundColor="#ADD8E6"
+                    TextColor="Black"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnCadastrarMateriaPrimaClicked"/>
+                    
+            <Button Text="Cadastrar Fornecedor" 
+                    BackgroundColor="#ADD8E6"
+                    TextColor="Black"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnCadastrarFornecedorClicked"/>
+                    
+            <Button Text="Acompanhar Vendas" 
+                    BackgroundColor="#ADD8E6"
+                    TextColor="Black"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnAcompanharVendasClicked"/>
+                    
+            <Button Text="Gerenciar Clientes" 
+                    BackgroundColor="#ADD8E6"
+                    TextColor="Black"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnGerenciarClientesClicked"/>
+                    
+            <Button Text="Gerenciar Vendas" 
+                    BackgroundColor="#ADD8E6"
+                    TextColor="Black"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnGerenciarVendasClicked"/>
+                    
+            <Button Text="Cadastrar Costureira" 
+                    BackgroundColor="#ADD8E6"
+                    TextColor="Black"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnCadastrarCostureiraClicked"/>
+
+                     <Button Text="Transportadora" 
+                    BackgroundColor="#ADD8E6"
+                    TextColor="Black"
+                    CornerRadius="5"
+                    HeightRequest="50"
+                    Clicked="OnTransportadoraClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+
