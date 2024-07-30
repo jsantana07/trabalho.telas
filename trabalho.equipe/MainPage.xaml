@@ -46,7 +46,7 @@
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"
-                    Clicked="OnGerenciarVendasClicked"/>
+                    Clicked="OnAcompanharVendasClicked"/>
                     
             <Button Text="Cadastrar Costureira" 
                     BackgroundColor="#ADD8E6"

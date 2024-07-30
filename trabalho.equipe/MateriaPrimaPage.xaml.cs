@@ -1,10 +1,10 @@
 using Microsoft.Maui.Controls;
 
-namespace trabalhojulia07
+namespace trabalho.equipe
 {
-    public partial class MateriaPrima: ContentPage
+    public partial class MateriaPrimaPage: ContentPage
     {
-        public MateriaPrima()
+        public MateriaPrimaPage()
         {
             InitializeComponent();
         }
