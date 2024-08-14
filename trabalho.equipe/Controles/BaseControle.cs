@@ -1,5 +1,6 @@
 using LiteDB;
-using trabalho.equipe.Modelos;
+using Modelos;
+
 
 namespace Controles;
 

@@ -1,3 +1,5 @@
+using LiteDB;
+
 namespace Modelos;
 
 public class Materiaprima 

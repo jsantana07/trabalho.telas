@@ -2,11 +2,11 @@ using Modelos;
 
 namespace Controles;
 
-public class ClienteControle : BaseControle
+public class CortadorControle : BaseControle
 {
   //----------------------------------------------------------------------------
 
-  public ClienteControle() : base()
+  public CortadorControle() : base()
   {
     NomeDaTabela = "Clientes";
   }
@@ -15,32 +15,32 @@ public class ClienteControle : BaseControle
 
   public virtual Registro? Ler(int idCliente)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+    var collection = liteDB.GetCollection<Cortador>(NomeDaTabela);
     return collection.FindOne(d => d.Id == idCliente);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Cliente>? LerTodos()
+  public virtual List<Cortador>? LerTodos()
   {
-    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Nome));
+    var tabela = liteDB.GetCollection<Cortador>(NomeDaTabela);
+    return new List<Cortador>(tabela.FindAll());
   }
 
   //----------------------------------------------------------------------------
 
   public virtual void Apagar(int idCliente)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    collection.Delete(idCliente);
+    var collection = liteDB.GetCollection<Cortador>(NomeDaTabela);
+    collection.Delete(idCortador);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Cliente cliente)
+  public virtual void CriarOuAtualizar(Cortador Cortador)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    collection.Upsert(cliente);
+    var collection = liteDB.GetCollection<Cortador>(NomeDaTabela);
+    collection.Upsert(Cortador);
   }
 
   //----------------------------------------------------------------------------
