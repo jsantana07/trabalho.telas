@@ -72,7 +72,7 @@
                                     <Button Text="Remover"
                                             BackgroundColor="Red"
                                             TextColor="White"
-                                            Clicked="OnRemoverClienteClicked"/>
+                                            Clicked="removerclienteclicado"/>
                                 </VerticalStackLayout>
                             </Frame>
                         </DataTemplate>

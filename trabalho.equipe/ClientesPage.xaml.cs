@@ -7,7 +7,7 @@ namespace trabalho.equipe
     {
         ObservableCollection<Cliente> Clientes;
 
-        public ClientesPage()
+        public  ClientesPage()
         {
             InitializeComponent();
             Clientes = new ObservableCollection<Cliente>
@@ -20,11 +20,26 @@ namespace trabalho.equipe
 
         private void OnCadastrarClienteClicked(object sender, EventArgs e)
         {
-            // Implementar a lógica de cadastro aqui
-            DisplayAlert("Cadastro", "Cliente cadastrado com sucesso!", "OK");
+            if (await VerificaSeDadosEstaoCorretos())
+    {
+     
+      var cliente = new Modelos.Cliente();
+      if (!String.IsNullOrEmpty(IdLabel.Text))
+        cliente.Id      = int.Parse(IdLabel.Text);
+      else
+        cliente.Id      = 0;
+      cliente.Nome      = NomeEntry.Text;
+      cliente.Endereço = EndereçoEntry.Text;
+      cliente.CPF  = CPFEntry.Text;
+      clienteControle.CriarOuAtualizar(cliente);
+    
+      await  DisplayAlert("Cadastro", "Cliente cadastrado com sucesso!", "OK");
+    }
+  }
+           
         }
 
-        private void OnRemoverClienteClicked(object sender, EventArgs e)
+        private void removerclienteclicado(object sender, EventArgs e)
         {
             var button = sender as Button;
             var cliente = button?.BindingContext as Cliente;
@@ -43,5 +58,5 @@ namespace trabalho.equipe
         public string Gmail { get; set; }
         public string CPF { get; set; }
     }
-}
+
 
