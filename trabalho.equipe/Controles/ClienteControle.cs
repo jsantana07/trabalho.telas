@@ -1,10 +1,10 @@
 using Modelos;
+using trabalho.equipe.Modelos;
 
 namespace Controles;
 
 public class ClienteControle : BaseControle
 {
-  //----------------------------------------------------------------------------
 
   public ClienteControle() : base()
   {

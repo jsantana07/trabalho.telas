@@ -29,7 +29,7 @@ public class CortadorControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void Apagar(int idCliente)
+  public virtual void Apagar(int idCortador)
   {
     var collection = liteDB.GetCollection<Cortador>(NomeDaTabela);
     collection.Delete(idCortador);
