@@ -10,31 +10,9 @@
                 Margin="20"
                 BackgroundColor="White">
             <VerticalStackLayout Spacing="15">
-                <!-- Barra de Busca -->
-                <HorizontalStackLayout Spacing="10">
-                    <ImageButton Source="search_icon.png"
-                                 WidthRequest="40"
-                                 HeightRequest="40"/>
-                    <Entry Placeholder="Procurar Cliente"
-                           WidthRequest="250"
-                           HeightRequest="40"
-                           BackgroundColor="White"
-                           TextColor="Black"/>
-                    <ImageButton Source="add_icon.png"
-                                 WidthRequest="40"
-                                 HeightRequest="40"/>
-                    <ImageButton Source="remove_icon.png"
-                                 WidthRequest="40"
-                                 HeightRequest="40"/>
-                </HorizontalStackLayout>
-
-                <!-- Cadastro de Cliente -->
-                <Button Text="Cadastrar Cliente"
-                        BackgroundColor="#ADD8E6"
-                        TextColor="Black"
-                        CornerRadius="5"
-                        HeightRequest="50"
-                        Clicked="OnCadastrarClienteClicked"/>
+        
+        <Label x:Name="IdLabel">
+        </Label>
 
                 <Entry x:Name="NomeEntry"
                  Placeholder="Nome"
@@ -60,37 +38,8 @@
                        TextColor="Black"
                        Keyboard="Numeric"/>
 
-                <!-- Lista de Clientes -->
-                
-               <Label x:Name="IdLabel"
-                Text="Lista de Clientes"
-                       FontSize="Medium"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"/>
-
-                <CollectionView x:Name="ClientesCollectionView">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Frame BorderColor="LightGray"
-                                    Padding="10"
-                                    Margin="5"
-                                    CornerRadius="10">
-                                <VerticalStackLayout>
-                                    <Label Text="{Binding Nome}"
-                                            FontAttributes="Bold"/>
-                                    <Label Text="{Binding Endereco}"
-                                            FontAttributes="Italic"/>
-                                    <Label Text="{Binding Gmail}"/>
-                                    <Label Text="{Binding CPF}"/>
-                                    <Button Text="Remover"
-                                            BackgroundColor="Red"
-                                            TextColor="White"
-                                            Clicked="removerclienteclicado"/>
-                                </VerticalStackLayout>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+              <Button Text="Salvar"
+               Clicked="OnCadastrarClienteClicked"/>
             </VerticalStackLayout>
         </Frame>
     </ScrollView>

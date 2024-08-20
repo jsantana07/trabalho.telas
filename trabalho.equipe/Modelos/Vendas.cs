@@ -2,7 +2,7 @@
 using LiteDB;
 
 namespace Modelos;
-public class Vendas 
+public class Vendas: Registro
 {
      public string produto{ get; set; }
      public string quantidade{ get; set; }
@@ -10,6 +10,6 @@ public class Vendas
      public string cliente{ get; set; }
 
      [BsonId]
-     public int id{ get; set; }
+     public int Id{ get; set; }
 
 }

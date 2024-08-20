@@ -8,55 +8,55 @@
     
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="O que deseja fazer?" 
+            <Label Text="Por onde deseja começar?" 
                    FontSize="Large"
                    HorizontalOptions="Center" 
                    Margin="0,20,0,20"/>
             
             <Button Text="Cadastrar Matéria Prima" 
-                    BackgroundColor="#ADD8E6"
+                    BackgroundColor="#b167c2"
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"
                     Clicked="OnCadastrarMateriaPrimaClicked"/>
                     
             <Button Text="Cadastrar Fornecedor" 
-                    BackgroundColor="#ADD8E6"
+                    BackgroundColor="#b167c2"
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"
                     Clicked="OnCadastrarFornecedorClicked"/>
                     
             <Button Text="Acompanhar Vendas" 
-                    BackgroundColor="#ADD8E6"
+                    BackgroundColor="#b167c2"
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"
                     Clicked="OnAcompanharVendasClicked"/>
                     
             <Button Text="Gerenciar Clientes" 
-                    BackgroundColor="#ADD8E6"
+                    BackgroundColor="#b167c2"
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"
                     Clicked="OnGerenciarClientesClicked"/>
                     
             <Button Text="Gerenciar Vendas" 
-                    BackgroundColor="#ADD8E6"
+                    BackgroundColor="#b167c2"
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"
                     Clicked="OnAcompanharVendasClicked"/>
                     
             <Button Text="Cadastrar Costureira" 
-                    BackgroundColor="#ADD8E6"
+                    BackgroundColor="#b167c2"
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"
                     Clicked="OnCadastrarCostureiraClicked"/>
 
                      <Button Text="Transportadora" 
-                    BackgroundColor="#ADD8E6"
+                    BackgroundColor="#b167c2"
                     TextColor="Black"
                     CornerRadius="5"
                     HeightRequest="50"

@@ -21,7 +21,7 @@ public class ClienteControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Cliente>? LerTodos()
+  public virtual  List<Cliente>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
     return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Nome));
@@ -29,7 +29,7 @@ public class ClienteControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void Apagar(int idCliente)
+  public virtual  void Apagar(int idCliente)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
     collection.Delete(idCliente);
@@ -37,7 +37,7 @@ public class ClienteControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Cliente cliente)
+  public virtual  void CriarOuAtualizar(Cliente cliente)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
     collection.Upsert(cliente);

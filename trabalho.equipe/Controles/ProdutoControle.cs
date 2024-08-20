@@ -12,10 +12,10 @@ public class ProdutoControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idPoduto)
+  public virtual Registro? Ler(int IdProduto)
   {
     var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idProduto);
+    return collection.FindOne(d => d.Id == IdProduto);
   }
 
   //----------------------------------------------------------------------------

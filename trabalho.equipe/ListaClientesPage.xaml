@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trabalho.equipe.ListaClientesPage"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="false">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Button Text="Cadastrar novo cliente"
+           Clicked="CadastrarClicado"
+           BackgroundColor="blue"
+           Grid.Row="1"/>
+
+           <ListView x:Name="ListaClientes"
+           Grid.Row="0"
+              HasUnevenRows="True"
+              ItemSelected="QuandoSelecionarUmItemNaLista"
+              HorizontalOptions="Fill"
+              VerticalOptions="Fill"
+              BackgroundColor="white"
+             >
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <VerticalStackLayout Padding="20"
+                                BackgroundColor="Pink">
+              <HorizontalStackLayout>
+                <Label Text="{Binding Nome}"
+                      FontSize="20"/>
+                <Label Text="{Binding Sobrenome}"
+                      FontSize="20"
+                      Margin="10,0,0,0"/>
+              </HorizontalStackLayout>
+              <Label Text="{Binding Telefone}"
+                      FontSize="20"/>
+            </VerticalStackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+
+
+
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+</ContentPage>

@@ -37,10 +37,10 @@ public class FornecedorControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Fornecedor cliente)
+  public virtual void CriarOuAtualizar(Fornecedor fornecedor)
   {
     var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-    collection.Upsert(Fornecedor);
+    collection.Upsert(fornecedor);
   }
 
   //----------------------------------------------------------------------------

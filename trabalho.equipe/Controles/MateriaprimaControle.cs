@@ -36,10 +36,10 @@ public class MateriaprimaControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Materiaprima cliente)
+  public virtual void CriarOuAtualizar(Materiaprima materiaprima)
   {
     var collection = liteDB.GetCollection<Materiaprima>(NomeDaTabela);
-    collection.Upsert(Materiaprima);
+    collection.Upsert(materiaprima);
   }
 
   //----------------------------------------------------------------------------

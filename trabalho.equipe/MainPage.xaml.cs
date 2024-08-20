@@ -25,7 +25,7 @@ public partial class MainPage : ContentPage
 
         private async void OnGerenciarClientesClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ClientesPage());
+            await Navigation.PushAsync(new ListaClientesPage());
         }
 
         private async void OnCadastrarCostureiraClicked(object sender, EventArgs e)
