@@ -30,7 +30,7 @@ public partial class MainPage : ContentPage
 
         private async void OnCadastrarCostureiraClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CostureiraPage());
+            await Navigation.PushAsync(new ListaCostureiraPage());
         }
          private async void OnTransportadoraClicked(object sender, EventArgs e)
         {

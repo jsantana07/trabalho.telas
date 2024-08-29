@@ -16,18 +16,20 @@
         <Label Text="Cadastro
  Costureira" FontSize="Title" HorizontalTextAlignment="Center" Grid.Row="0" />
 
+        <Label  Grid.Row="1" x:Name="IdLabel"/>
+
         <Label Text="Nome:" Grid.Row="1" />
-        <Entry x:Name="entryNome" Grid.Row="1" Grid.Column="1" />
+        <Entry x:Name="NomeEntry" Grid.Row="1" Grid.Column="1" />
 
         <Label Text="Telefone:" Grid.Row="2" />
         <Entry x:Name="entryTelefone" Grid.Row="2" Grid.Column="1" />
 
         <Label Text="Endereço:" Grid.Row="3" />
-        <Entry x:Name="entryEndereco" Grid.Row="3" Grid.Column="1" />
+        <Entry x:Name="EnderecoEntry" Grid.Row="3" Grid.Column="1" />
 
         <Label Text="CPF:" Grid.Row="4" />
-        <Entry x:Name="entryCpf" Grid.Row="4" Grid.Column="1" />
+        <Entry x:Name="CPFEntry" Grid.Row="4" Grid.Column="1" />
 
-        <Button Text="SALVAR" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="1" />
+        <Button Text="SALVAR" Clicked="OnCadastrarCostureiraClicked" Grid.Row="5" Grid.Column="1" />
     </Grid>
 </ContentPage>
