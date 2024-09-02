@@ -6,6 +6,7 @@ namespace trabalho.equipe
     public partial class CostureiraPage : ContentPage
     {
         public Costureira costureira;
+        public Materiaprima materiaprima;
         Controles.CostureiraControle costureiraControle = new Controles.CostureiraControle();
         public CostureiraPage()
         {

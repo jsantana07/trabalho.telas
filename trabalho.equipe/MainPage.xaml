@@ -8,6 +8,7 @@
     
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
+        
             <Label Text="Por onde deseja começar?" 
                    FontSize="Large"
                    HorizontalOptions="Center" 

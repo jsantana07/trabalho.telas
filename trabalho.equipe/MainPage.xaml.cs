@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
 	}
 	private async void OnCadastrarMateriaPrimaClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MateriaPrimaPage());
+            await Navigation.PushAsync(new ListaMateriaprimaPage());
         }
 
         private async void OnCadastrarFornecedorClicked(object sender, EventArgs e)
