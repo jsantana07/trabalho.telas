@@ -40,6 +40,11 @@
 
               <Button Text="Salvar"
                Clicked="OnCadastrarClienteClicked"/>
+
+                 <Button Text="Excluir"
+                        TextColor="Pink"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarClienteClicked"/>
             </VerticalStackLayout>
         </Frame>
     </ScrollView>

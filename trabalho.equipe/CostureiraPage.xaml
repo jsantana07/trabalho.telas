@@ -31,5 +31,7 @@
         <Entry x:Name="CPFEntry" Grid.Row="4" Grid.Column="1" />
 
         <Button Text="SALVAR" Clicked="OnCadastrarCostureiraClicked" Grid.Row="5" Grid.Column="1" />
+
+        
     </Grid>
 </ContentPage>

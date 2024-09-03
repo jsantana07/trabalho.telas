@@ -23,6 +23,7 @@ namespace trabalho.equipe
                 EnderecoEntry.Text = costureira.endereço;
             }
         }
+        
 
         private async void OnCadastrarCostureiraClicked(object sender, EventArgs e) // Adicionado 'async'
         {
@@ -41,7 +42,7 @@ namespace trabalho.equipe
                 await DisplayAlert("Cadastro", "Cliente cadastrado com sucesso!", "OK");
             }
         }
-
+    
 
     }
 }

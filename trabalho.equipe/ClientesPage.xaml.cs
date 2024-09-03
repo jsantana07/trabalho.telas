@@ -46,6 +46,19 @@ namespace trabalho.equipe
                 await DisplayAlert("Cadastro", "Cliente cadastrado com sucesso!", "OK");
             }
         }
+         private async void OnApagarClienteClicked(object sender, EventArgs e)
+  {
+   
+    if (cliente == null || cliente.Id < 1)
+      await DisplayAlert("Erro", "Nenhum cliente para excluir", "ok");
+    else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse cliente?","Excluir Cliente","cancelar")) // Caso o usuário tocar no Botão "Excluir Cliente"
+    {
+     
+      clienteControle.Apagar(cliente.Id);
+      
+      Application.Current.MainPage = new ListaClientesPage(); 
+    }
+  }
 
 
     }
