@@ -7,6 +7,7 @@
               <VerticalStackLayout Padding="20"
                             Spacing="15">
 
+
                      <Label Text="CADASTRO MATERIA-PRIMA"
                             FontSize="Large"
                             FontAttributes="Bold"

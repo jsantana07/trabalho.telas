@@ -7,6 +7,8 @@ namespace trabalho.equipe
     public partial class MateriaPrimaPage: ContentPage
     {
          Controles.MateriaprimaControle materiaprimaControle = new Controles.MateriaprimaControle();
+          public Materiaprima materiaprima;
+
         public MateriaPrimaPage()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace trabalho.equipe
                 else
                     materiaprima.Id = 0;
                 materiaprima.Nome = NomeEntry.Text;
-                materiaprima.Endereco = EnderecoEntry.Text; // Corrigido para 'Endereco'
+                materiaprima.Endereço = EnderecoEntry.Text; // Corrigido para 'Endereco'
                 materiaprima.Quantidade = QuantidadeEntry.Text;
                 materiaprimaControle.CriarOuAtualizar(materiaprima); // Adicionado 'await' e corrigido 'CriarOuAtualizar'
 
